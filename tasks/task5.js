@@ -3,16 +3,15 @@
 
 
 function countOccurrences(str, char) {
-	let count = 0; // Ініціалізуємо лічильник
+	let count = 0;
   
 	for (let i = 0; i < str.length; i++) {
-	  // Якщо поточний символ дорівнює char, збільшуємо лічильник
 	  if (str[i] === char) {
 		count++;
 	  }
 	}
 	
-	return count; // Повертаємо кількість входжень
+	return count;
   }
 
 // Приклади використання:

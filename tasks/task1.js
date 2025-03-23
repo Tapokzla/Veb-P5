@@ -2,20 +2,16 @@
 // на певний символ, наприклад *.
 
 function replaceVowels(str) {
-	// Створюємо масив з голосними
-	const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
-	// Створюємо порожній рядок для збереження результату
+	let vowels = ['a', 'e', 'i', 'o', 'u'];
 	let result = '';
-	
-	for (let char of str) {
-	  // Якщо символ є голосною, додаємо '*' до результату, інакше додаємо сам символ
-	  if (vowels.includes(char)) {
+  
+	for (let i = 0; i < str.length; i++) {
+	  if (vowels.includes(str[i].toLowerCase())) {
 		result += '*';
 	  } else {
-		result += char;
+		result += str[i];
 	  }
 	}
-	
 	return result;
   }
 
